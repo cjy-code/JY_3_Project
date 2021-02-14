@@ -1,0 +1,449 @@
+/* 모든 페이지에서 사용할 CSS 파일 */
+
+/* 글꼴 */
+/* 1. 제목(레코체) */
+@font-face {
+	font-family: 'Recipekorea';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 2. 넥슨 Lv2 고딕 */
+@font-face {
+	font-family: 'NEXON Lv2 Gothic';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 텍스트 설정 */
+
+/* 크기 */
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 25px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 15px;
+}
+
+/* 글꼴 + 태그 선택자 */
+body, p, div, span, ul, ol, li, dl, dt, dd, table, th, td, a, blockquote,
+	textarea, fieldset, small, strong, b, i, em {
+	font-family: 'NEXON Lv2 Gothic';
+	color: #555;
+	line-height: 1.5em;
+	font-size: 15px;
+}
+
+/* 제목 강조 */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Recipekorea';
+	color: #5B8E7D;
+}
+
+/* 일반 강조 */
+strong, b {
+	font-family: 'NEXON Lv2 Gothic';
+	color: #5B8E7D;
+}
+
+/* 텍스트 박스 설정 */
+textarea {
+	resize: none;
+}
+
+.noline {
+	outline: none;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border-color: #ccc;
+}
+
+.small {
+	width: 200px;
+}
+
+.medium {
+	width: 300px;
+}
+
+.large {
+	width: 400px;
+}
+
+/* 인라인 */
+.inline {
+	display: inline;
+}
+
+/* 여백 설정 */
+header {
+	margin-top: 30px;
+}
+
+footer {
+	margin-bottom: 30px;
+}
+
+/* 링크 설정 */
+a:hover {
+	text-decoration: none;
+	color: #F4A259;
+	border: none;
+	font-weight: bold;
+}
+
+/* header의 navbar */
+.title {
+	margin: 10px;
+}
+
+.navbar {
+	background-color: #F4E285;
+	border: none;
+}
+
+.nav>li>a:hover {
+	background-color: transparent;
+}
+
+.nav>li>a:active {
+	background-color: transparent;
+}
+
+.nav>li>a:visited {
+	background-color: transparent;
+}
+
+ul {
+	width: 105%;
+}
+
+li {
+	width: 16%;
+	text-align: center;
+}
+
+/* 도서표지 이미지 크기 설정 */
+.book-sm {
+	width: 130px;
+}
+
+.book-md {
+	width: 170px;
+}
+
+.book-lg {
+	width: 210px;
+}
+
+/* 버튼 설정 */
+.btn-general {
+	background-color: #BC4B51;
+	color: white;
+}
+
+.btn-general:hover {
+	background-color: transparent;
+	border: 1px solid #ccc;
+	color: #F4A259;
+}
+
+/* 테이블 크기 설정 */
+.tbl-sm {
+	width: 650px;
+}
+
+.tbl-md {
+	width: 850px;
+}
+
+.tbl-lg {
+	width: 1000px;
+}
+
+/*내가 해드 정리*/
+#headerlink {
+	text-align: right;
+	margin: 20px;
+}
+
+#searchmenu {
+	text-align: center;
+}
+
+#character {
+	width: 50px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: -5px;
+}
+
+.headerlink-item {
+	margin: 0 5px;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+	background-color: transparent;
+}
+
+a {
+	outline: none;
+}
+
+.btns {
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -50px;
+	text-align: center;
+}
+
+.btns>input {
+	margin-left: auto;
+	margin-right: auto;
+	width: 220px;
+}
+
+#booktable {
+	margin: 70px auto;
+	border: 1px solid #ccc;
+}
+
+.tblitem {
+	width: 220px;
+	text-align: center;
+	padding: 20px;
+}
+
+#bestmonth {
+	margin: 70px auto;
+	text-align: center;
+}
+
+#bestmonthtitle {
+	border-top: 1px dashed #ccc;
+	text-align: center;
+	width: 500px;
+	padding-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.monthitem {
+	width: 160px;
+}
+
+footer {
+	background-color: rgba(140, 179, 105, .5);
+	color: white;
+	padding-bottom: 20px;
+}
+
+#footerlink {
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+
+.footerlink-item {
+	margin: 0 3%;
+	color: white;
+}
+
+#footertable {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#footertable>td {
+	padding: 100px;
+}
+
+#call {
+	border-radius: 15px;
+	background-color: #F4E285;
+	padding: 10px;
+	text-align: center;
+}
+
+#call>h6 {
+	color: #BC4B51;
+}
+
+#bookjeok {
+	text-align: center;
+	position: fixed;
+	padding: 20px;
+	bottom: 0;
+}
+
+#top {
+	text-align: center;
+	position: fixed;
+	padding: 20px;
+	bottom: 0px;
+	right: 0px;
+}
+
+#top>span {
+	font-size: 1.5em;
+	color: #BC4B51;
+}
+
+/* 슬라이더 */
+.slick-items {
+	width: 60%;
+	margin: 70px auto;
+}
+
+.slick-item {
+	text-align: center;
+}
+
+.slick-item>img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*post slider*/
+.post-slider {
+	width: 70%;
+	margin: px auto;
+	position: relative;
+}
+
+.post-slider .silder-title {
+	text-align: center;
+	margin: 30px auto;
+}
+
+.post-slider .next {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	font-size: 2em;
+	color: gray;
+	cursor: pointer;
+}
+
+.post-slider .prev {
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	font-size: 2em;
+	color: gray;
+	cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+	width: 84%;
+	height: 350px;
+	margin: 0px auto;
+	overflow: hidden;
+	padding: 10px 0px 10px 0px;
+}
+
+.post-slider .post-wrapper .post {
+	width: 300px;
+	height: 300px;
+	margin: 0px 10px;
+	display: inline-block;
+	background: white;
+	border-radius: 5px;
+}
+
+.post-slider .post-wrapper .post .post-info {
+	font-size: 15px;
+	height: 30%;
+	padding-left: 10px;
+}
+
+.post-slider .post-wrapper .post .slider-image {
+	width: 100%;
+	height: 175px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.slick-dots li button:before {
+	color: #F4A259;
+}
+
+.slick-dots li.slick-active button:before {
+	color: #BC4B51;
+}
+
+
+
+
+/* footer */
+#footer {
+	/* border: 1px solid black; */
+	background-color: #f8edb7;
+}
+
+#footer .footer_con {
+	/* border: 1px solid black; */
+	background-color: #a2b98e;
+}
+
+#footer .footer_con li {
+	/* border: 1px solid black; */
+	display: inline-block;
+	margin-top: 8px;
+	width: 140px;
+	text-align: center;
+}
+
+#footer .footer_con .member_area {
+	/* border: 1px solid black; */
+	display: inline-block;
+	position: relative;
+	top: 0px;
+	left: 100px;
+}
+
+#footer .logo_area {
+	/* border: 1px solid black; */
+	display: inline-block;
+	position: relative;
+	top: -20px;
+	left: 20px;
+}
+
+#footer .click_footer {
+	/* border: 1px solid black; */
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	left: 30px;
+}
+
+
+
+/*MypageContests*/

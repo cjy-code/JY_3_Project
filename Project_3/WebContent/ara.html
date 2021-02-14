@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- 페이지 전체적용 -->
+<link rel="stylesheet" href="global.css">
+
+<style>
+#headerlink {
+	text-align: right;
+	margin: 20px;
+}
+
+#searchmenu {
+	text-align: center;
+}
+
+#character {
+	width: 50px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: -5px;
+}
+
+.headerlink-item {
+	margin: 0 5px;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+	background-color: transparent;
+}
+
+a {
+	outline: none;
+}
+
+.btns {
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -50px;
+	text-align: center;
+}
+
+.btns>input {
+	margin-left: auto;
+	margin-right: auto;
+	width: 220px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h3 {
+	margin: 50px auto;
+	text-align: center;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+#faqsearch {
+	text-align: center;
+	margin: 30px;
+}
+
+/* footer */
+footer {
+	background-color: rgba(140, 179, 105, .5);
+	color: white;
+	padding-bottom: 20px;
+}
+
+#footerlink {
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+
+.footerlink-item {
+	margin: 0 3%;
+	color: white;
+}
+
+#footertable {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#footertable>td {
+	padding: 100px;
+}
+
+#call {
+	border-radius: 15px;
+	background-color: #F4E285;
+	padding: 10px;
+	text-align: center;
+}
+
+#call>h6 {
+	color: #BC4B51;
+}
+
+#bookjeok {
+	text-align: center;
+	position: fixed;
+	padding: 20px;
+	bottom: 0;
+}
+
+#top {
+	text-align: center;
+	position: fixed;
+	padding: 20px;
+	bottom: 0px;
+	right: 0px;
+}
+
+#top>span {
+	font-size: 1.5em;
+	color: #BC4B51;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<!-- header -->
+		<header>
+
+			<!-- 상단메뉴 -->
+
+			<div id="headerlink">
+				<a href="#" class="headerlink-item">마이페이지</a> <a href="#"
+					class="headerlink-item">로그인</a> <a href="#" class="headerlink-item">회원가입</a>
+				<a href="#" class="headerlink-item">장바구니</a> <a href="#"
+					class="headerlink-item">주문/배송조회</a> <a href="#"
+					class="headerlink-item">고객센터</a>
+			</div>
+
+			<!-- 로고, 캐릭터, 검색창 -->
+
+			<div id="searchmenu">
+
+				<!-- 로고 및 캐릭터 -->
+				<h1 class="title inline">북적북적</h1>
+				<img src="image/character.png" id="character">
+
+				<!-- 통합검색창(검색분류선택창) -->
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+					role="button" aria-expanded="false">통합검색<span class="caret"></span></a>
+				<!-- <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul> -->
+
+				<div class="searchdiv inline">
+					<input type="text" id="search"
+						class="form-control noline small inline"> <input
+						type="button" id="searchbtn" value="검색"
+						class="btn btn-general noline">
+				</div>
+			</div>
+
+			<!-- 도서분류메뉴(navbar) -->
+			<nav class="navbar">
+				<div class="container-fluid">
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="#" class="nav-item">베스트도서</a></li>
+							<li><a href="#" class="nav-item">신간도서</a></li>
+							<li><a href="#" class="nav-item">국내도서</a></li>
+							<li><a href="#" class="nav-item">해외도서</a></li>
+							<li><a href="#" class="nav-item">E-Book</a></li>
+							<li><a href="#" class="nav-item">중고게시판</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- QnA -->
+		<section>
+			<h3>QnA</h3>
+
+			<table class="table tbl-md">
+				<tr>
+					<th>작성일</th>
+					<th>제목</th>
+					<th>답변여부</th>
+				</tr>
+				<tr>
+					<td>2021-02-10</td>
+					<td><a href="#">환불신청 어떻게 하나요?</a></td>
+					<td>답변완료</td>
+				</tr>
+				<tr>
+					<td>2021-02-07</td>
+					<td><a href="#">배송 관련해서 문의사항이 있습니다.</a></td>
+					<td>답변완료</td>
+				</tr>
+			</table>
+		</section>
+
+		<!-- 자주 하는 질문 -->
+		<section>
+			<h3>자주 하는 질문</h3>
+
+			<div id="faqsearch">
+				<input type="text" id="search"
+					class="form-control noline small inline"> <input
+					type="button" id="searchbtn" value="질문 검색"
+					class="btn btn-general noline">
+			</div>
+
+			<table class="table tbl-md">
+				<tr>
+					<th>카테고리</th>
+					<th>결제</th>
+				</tr>
+				<tr>
+					<td>주문결제</td>
+					<td><a data-toggle="modal" href="#myModal">온라인 송금으로 주문했을 때
+							주문자와 입금자가 같아야 하나요?</a></td>
+				</tr>
+				<tr>
+					<td>수령일안내</td>
+					<td><a data-toggle="modal" href="#myModal">주문한 상품이 아직 안
+							왔어요.</a></td>
+				</tr>
+				<tr>
+					<td>반품</td>
+					<td><a data-toggle="modal" href="#myModal">반품시 마일리지 환원되나요?</a></td>
+				</tr>
+				<tr>
+					<td>교환</td>
+					<td><a data-toggle="modal" href="#myModal">배송받은 제품을 교환하고
+							싶어요</a></td>
+				</tr>
+				<tr>
+					<td>환불</td>
+					<td><a data-toggle="modal" href="#myModal">결함품 환불가능한가요?</a></td>
+				</tr>
+			</table>
+		</section>
+
+		<!-- footer -->
+		<footer>
+
+			<!-- 링크모음 -->
+			<div id="footerlink">
+				<a href="#" class="footerlink-item">회사소개</a> <a href="#"
+					class="footerlink-item">고객센터</a> <a href="#"
+					class="footerlink-item">청약철회</a> <a href="#"
+					class="footerlink-item">이용약관</a> <a href="#"
+					class="footerlink-item">개인정보처리방침</a> <a href="#"
+					class="footerlink-item">이메일 무단 수집거부</a>
+			</div>
+
+			<table id="footertable">
+				<tr>
+					<td rowspan="3">
+						<h1 class="title inline">북적북적</h1> <img src="image/character.png"
+						id="character">
+					</td>
+					<td>회사명</td>
+					<td>북적북적</td>
+					<td rowspan="3">
+						<div id="call">
+							<h6>고객센터</h6>
+							<h6>1544-1544</h6>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>소재지</td>
+					<td>서울특별시 강남구 역삼동 테헤란로 132</td>
+				</tr>
+				<tr>
+					<td>회사소개</td>
+					<td>회사소개입니다.</td>
+				</tr>
+			</table>
+		</footer>
+	</div>
+
+	<!-- 북적이에게 문의하기 -->
+
+	<div id="bookjeok">
+		<label for="character"> <img src="image/character.png"
+			id="character">
+			<h6>북적이에게</h6>
+			<h6>문의하기</h6>
+		</label>
+
+	</div>
+
+	<!-- top -->
+	<div id="top">
+		<span class="glyphicon glyphicon-chevron-up"></span>
+		<h6>TOP</h6>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">자주 하는 질문</h4>
+				</div>
+				<div class="modal-body">
+					<p>Q. 온라인 송금으로 주문했을 때 주문자와 입금자가 같아야 하나요?</p>
+					<p>A. 네 같아야 합니다.</p>
+				</div>
+				<!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> -->
+			</div>
+		</div>
+	</div>
+	</div>
+
+</body>
+
+</html>
