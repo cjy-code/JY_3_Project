@@ -28,6 +28,14 @@ section {
     float:left;
 }
 
+.mainsection {
+    margin:15px;
+}
+
+.contentsection {
+    margin:15px;
+    float:left;
+}
 footer {
     clear:both;
 }

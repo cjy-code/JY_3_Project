@@ -5,12 +5,13 @@
 
 /*마이페이지 css 파일*/
 #content {
-	width: 860px;
-	height: 900px;
-	/* border: 1px solid black; */
+	width: 1000px;
+	height: 500px;
+	display: inline-block;
 	position: relative;
-	top: 100px;
-	left: 280px;
+	top:  -50px;
+	left: 100px;
+	
 }
 
 .contentsbox {
@@ -22,6 +23,12 @@
 	/* border: 1px solid black; */
 }
 
+#mdBox{
+	width:1200px;
+	heigh:450px;
+	/* border: 1px solid red; */
+}
+
 .contentsbox>a {
 	position: relative;
 	text-align: right;
@@ -30,5 +37,39 @@
 
 .contentsBox>span{
 	width:300px;
-	border: 1px solid black; 
+	/* border: 1px solid black;  */
+}
+
+#sideMenu{
+	width:185px;
+	height: 575px;
+	display: inline-block;
+	
+}
+
+#content{
+	/* border: 1px solid black; */
+	display: inline-block;
+	position: relative;
+	top:  -50px;
+	left: 100px;
+}
+
+
+/* 북적이에게 문의하기 */
+#bookjeok {
+	text-align: center;
+	position: fixed;
+	padding: 20px;
+	bottom: 0;
+}
+
+
+/* top */
+#top {
+	text-align: center;
+	position: fixed;
+	padding: 20px;
+	bottom: 0px;
+	right: 0px;
 }

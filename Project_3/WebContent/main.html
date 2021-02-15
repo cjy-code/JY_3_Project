@@ -25,7 +25,7 @@
 
     <style>
 
-#headerlink {
+        #headerlink {
             text-align:right;
             margin:20px;
         }
@@ -34,39 +34,18 @@
             text-align:center;
         }
 
-        #logo {
-            width:250px;
+        #character {
+            width:50px;
             margin-bottom:20px;
             margin-right:10px;
             margin-left:-5px;
-        }  /* 헤더에도 있는 중복된 CSS! 헤더랑 합치려면 이 코드 하나는 삭제해야 함! */
-
-        #realtime {
-            margin:10px;
         }
 
         .headerlink-item {
             margin:0 5px;
         }
-        
-        .navbar {
-            background-color: #F4E285;
-            border:none;
-        }
 
-        .nav > li > a:hover {
-            background-color:transparent;
-        }
-
-        .nav > li > a:active {
-            background-color:transparent;
-        }
-
-        .nav > li> a:visited {
-            background-color:transparent;
-        }
-
-        .nav > li > a:focus{
+        .nav > li > a:hover, .nav > li > a:focus {
             background-color:transparent;
         }
 
@@ -118,11 +97,10 @@
             width:160px;
         }
 
-        /* footer */
-
         footer {
-            background-color: #f8edb7;
-            text-align:center;
+            background-color: rgba(140, 179, 105, .5);
+            color:white;
+            padding-bottom:20px;
         }
 
         #footerlink {
@@ -134,34 +112,28 @@
 
         .footerlink-item {
             margin:0 3%;
-        }
-
-        .separator {
             color:white;
         }
-
-        footer .logo_area {
-            display: inline-block;
-            position: relative;
-            top: -20px;
-            left: 20px;
+        
+        #footertable {
+            width:700px;
+            margin:0 auto;
         }
 
-        footer .click_footer {
-            display: inline-block;
-            position: relative;
-            text-align:left;
-            top: 20px;
-            left: 30px;
+        #footertable > td {
+            padding:100px;
         }
 
-        .logo_area {
-            display:inline;
+        #call {
+            border-radius: 15px;
+            background-color:#F4E285;
+            padding:10px;
+            text-align:center;
         }
 
-        /* 화면 고정 요소 */
-
-        /* 북적이에게 문의하기 */
+        #call > h6 {
+            color:#BC4B51;
+        }
 
         #bookjeok {
             text-align:center;
@@ -169,12 +141,6 @@
             padding:20px;
             bottom: 0;
         }
-
-        #chatbtn {
-            width:60px;
-        }
-
-        /* TOP */
 
         #top {
             text-align:center;
@@ -278,7 +244,7 @@
             <!-- 상단메뉴 -->
 
             <div id="headerlink">
-                <a href="#" class="headerlink-item">마이페이지</a>
+                <a class="headerlink-item" href="http://localhost:8090/test3/myPage_2.jsp">마이페이지</a>
                 <a href="#" class="headerlink-item">로그인</a>
                 <a href="#" class="headerlink-item">회원가입</a>
                 <a href="#" class="headerlink-item">장바구니</a>
@@ -291,7 +257,8 @@
             <div id="searchmenu">
 
                 <!-- 로고 및 캐릭터 -->
-                <img src="image/bookjeok/logo.png" id="logo">
+                <h1 class="title inline">북적북적</h1>
+                <img src="image/character.png" id="character">
                 
                 <!-- 통합검색창(검색분류선택창) -->
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">통합검색<span class="caret"></span></a>
@@ -309,10 +276,6 @@
                     <input type="text" id="search" class="form-control noline small inline">
                     <input type="button" id="searchbtn" value="검색" class="btn btn-general noline">
                 </div>
-
-                <!-- 실시간검색어(현우님이 나중에 수정해주셔야 함! id랑 class는 CSS때문에 주의!) -->
-                <div id="realtime" class="inline">실시간검색어</div>
-
             </div>
 
             <!-- 도서분류메뉴(navbar) -->
@@ -470,32 +433,42 @@
         
         <!-- footer -->
         <footer>
+
+            <!-- 링크모음 -->
             <div id="footerlink">
                 <a href="#" class="footerlink-item">회사소개</a>
-                <p class="separator inline">&verbar;</p>
                 <a href="#" class="footerlink-item">고객센터</a>
-                <p class="separator inline">&verbar;</p>
                 <a href="#" class="footerlink-item">청약철회</a>
-                <p class="separator inline">&verbar;</p>
                 <a href="#" class="footerlink-item">이용약관</a>
-                <p class="separator inline">&verbar;</p>
                 <a href="#" class="footerlink-item">개인정보처리방침</a>
-                <p class="separator inline">&verbar;</p>
-                <a href="#" class="footerlink-item">광고문의</a>
+                <a href="#" class="footerlink-item">이메일 무단 수집거부</a>
             </div>
-        
-            <div class="logo_area">
-                <img src="image/bookjeok/logo.png" id="logo" alt="북적북적" />
-            </div>
-            <div class="click_footer">
-                <address>
-                    ㈜ 북적북적 &nbsp; 서울시 강남구 역삼동 한독빌딩 &nbsp; 대표이사 : 웹사조<br />
-                    사업자등록번호 : 102-81-11670<br />
-                    <strong class="big">대표전화 : 1544 - 0000 (발신자 부담전화)</strong> &nbsp; 팩스 : 0000-000-0000 (지역번호공통)<br />
-                    서울특별시 통신판매업신고번호 : 제 000호
-                    <div class="copy">COPYRIGHT(C) <strong>BOOKJUCK BOOKJUCK</strong> ALL RIGHTS RESERVED.</div>
-                </address>
-            </div>
+
+            <table id="footertable">
+                <tr>
+                    <td rowspan="3">
+                        <h1 class="title inline">북적북적</h1>
+                        <img src="image/character.png" id="character">
+                    </td>
+                    <td>회사명</td>
+                    <td>북적북적</td>
+                    <td rowspan="3">
+                        <div id="call">
+                            <h6>고객센터</h6>
+                            <h6>1544-1544</h6>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>소재지</td>
+                    <td>서울특별시 강남구 역삼동 테헤란로 132</td>
+                </tr>
+                <tr>
+                    <td>회사소개</td>
+                    <td>회사소개입니다.</td>
+                </tr>
+            </table>
+
         </footer>
     </div>
 
@@ -503,10 +476,11 @@
 
     <div id="bookjeok">
         <label for="character">
-        <img src="image/bookjeok/chatbtn.png" id="chatbtn">
+        <img src="image/character.png" id="character">
         <h6>북적이에게</h6>
         <h6>문의하기</h6>
         </label>
+        
     </div>
 
     <!-- top -->
@@ -516,22 +490,38 @@
     </div>
 
     <!-- 스크립트 영역 -->
-    <!-- 도서 회전 -->
+    
     <script type="text/javascript">
 
-    $(document).ready(function () {
-        $('.slick-items').slick({
-            autoplay : true,
-            dots: true,
-            speed : 300 /* 이미지가 슬라이딩시 걸리는 시간 */,
-            infinite: true,
-            autoplaySpeed: 3000 /* 이미지가 다른 이미지로 넘어 갈때의 텀 */,
-            arrows: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            fade: false
-        });
-    });
+$(document).ready(function () {
+
+	//alert('123');
+
+	$('.slick-items').slick({
+
+		autoplay : true,
+
+		dots: true,
+
+		speed : 300 /* 이미지가 슬라이딩시 걸리는 시간 */,
+
+		infinite: true,
+
+		autoplaySpeed: 3000 /* 이미지가 다른 이미지로 넘어 갈때의 텀 */,
+
+		arrows: true,
+
+		slidesToShow: 3,
+
+		slidesToScroll: 1,
+
+		fade: false
+
+	});
+
+});
+
+
 
 </script>
 
